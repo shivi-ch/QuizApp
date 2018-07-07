@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="col s12 m7">
+    <div class="card horizontal">
+      <div class="card-stacked">
+
+        <div class="card-content">
+          <h5>{{question && question[i]?.que}}</h5>
+        </div>
+        <div class="card-content" style="margin-left: 20px">
+          <label>
+            <input class="with-gap" name="option" value="{{question && question[i]?.oa}}" type="radio" [(ngModel)]="option" />
+            <span style="margin-right: 80px">{{question && question[i]?.oa}}</span>
+          </label>
+
+          <label>
+            <input class="with-gap" value="{{question && question[i]?.ob}}" name="option" type="radio" [(ngModel)]="option"/>
+            <span style="margin-right: 80px">{{question && question[i]?.ob}}</span>
+          </label>
+
+          <label>
+            <input class="with-gap" value="{{question && question[i]?.oc}}" name="option" type="radio" [(ngModel)]="option" />
+            <span>{{question && question[i]?.oc}}</span>
+          </label>
+        </div>
+          <button type="submit" (click)='rincrease(i)' class="next" style=" height:40px;font-size: 25px;background-color:cyan;border-radius:12px 50px 12px">Next</button>
+                <p>Your Answer :: {{option}}</p> 
+               
+                 
+      </div>
+    </div>
+  </div>
+</div>

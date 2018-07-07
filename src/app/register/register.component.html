@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col s6 offset-s3">
+    <div class="card">
+
+      <div class ="col s12"style="text-align: center;magin-bottom:30px">
+        <h2 >Regiter And Start The Test</h2>
+      </div>
+            
+      <div class="card-content">
+          <div class="row">
+            <div class="input-field col s12">
+              <input type="text" [(ngModel)]="uname">
+              <label>User Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input type="password" [(ngModel)]="password">
+              <label>Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+                <button class="btn-large btn-submit" (click)='nextwindow()'>Login</button>              
+            </div>
+          </div>
+          {{msg}}
+          <br> <br>
+
+          <p style="color:lightcoral;font-size: 15px">*********************************************</p>
+          <p style="color:lightcoral;font-size: 15px">*Test will Contain 10 questions</p>
+          <p style="color:lightcoral;font-size: 15px">*You you cannot go to prvious question</p>
+          <p style="color:lightcoral">*********************************************</p>
+          
+          
+          
+      </div>
+    </div>
+  </div>
+</div>
